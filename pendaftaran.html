@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Halaman Beranda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Septito Aldo Elvianto">
+  <meta name="nim" content="233307026">
+
+  <style>
+    * {
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    }
+
+    nav {
+    float: left;
+    width: 30%;
+    height: 500px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+    }
+
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px; /* only for demonstration, should be removed */
+    }
+
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav,
+      article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .container {
+      border: 1px solid #000;
+      padding: 20px;
+      width: 53%;
+      position: relative;
+    }
+    .judul {
+      background-color: #f1f1f1;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Judul Website</h2>
+  </header>
+  <section>
+    <nav> 
+      <ul>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="gambar.html">Gambar</a></li>
+  <li><a href="event.html">Event</a></li>
+  <li><a href="audio.html">Audio</a></li>
+  <li><a href="video.html">Video</a></li>
+  <li><a href="svg.html">SVG</a></li>
+  <li><a href="canvas.html">Canvas</a></li>
+</ul>
+    </nav>
+    <article>
+      <h1>Form Penjadwalan Pertemuan</h1>
+      <br>
+
+      <div class="container">
+        <div class="judul">Informasi Pribadi</div>
+        <form action="test">
+          <label for="nama">Nama</label> 
+          <input type="text" id="nama" name="nama" required><br><br>
+
+          <label for="notlp">No. Telepon</label>
+          <input type="text"><br><br>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id=".com"><br><br>
+
+          <label for="tl">Tanggal Lahir:</label>
+          <input type="date" id="tl" name="tl" min="1987-01-01" max="1993-01-01" required><br>
+        </form>
+      </div>
+      <br>
+      <div class="container">
+        <div class="judul">Permintaan Pertemuan</div>
+        <form action="test">
+          <label for="tujuan">Tujuan Pertemuan</label> 
+          <input type="text" id="tujuan" name="tujuan" required><br><br>
+
+          <label for="prioritas">Tingkat Prioritas</label>
+          <input type="range" id="prioritas" name="prioritas" min="0" max="10"><br><br>
+          
+          <label for="date">Tanggal:</label>
+          <input type="date" id="date" name="date" min="<?php echo date('Y-m-d'); ?>" required><br><br>
+          
+          <label for="jam">Jam:</label>
+          <input type="jam" id="jam" name="jam" min="17:00" max="21:00" required><br>br
+          
+        </form>
+      </div>
+
+
+      <p> <!--Tulis kesimpulan hasil ujicoba disini --></p>
+    </article>
+  </section>
+  <footer>
+    <p>sep-ae@2k24</p> 
+  </footer>
+</body>
+</html>
